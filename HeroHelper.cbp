@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="HeroHelper" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="..\bin\HeroHelper\HeroHelper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="..\obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-fno-strict-aliasing" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="..\bin\HeroHelper\HeroHelper" prefix_auto="1" extension_auto="1" />
+				<Option object_output="..\obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-O3" />
+					<Add option="-Wall" />
+					<Add option="-fno-strict-aliasing" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fno-strict-aliasing" />
+		</Compiler>
+		<Linker>
+			<Add library=".\libiconv.a" />
+		</Linker>
+		<Unit filename="ASLib\ASFile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ASLib\ASFile.h" />
+		<Unit filename="ASLib\ASIni.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ASLib\ASIni.h" />
+		<Unit filename="ASLib\ASLib.h" />
+		<Unit filename="ASLib\ASXls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ASLib\ASXls.h" />
+		<Unit filename="ASLib\libxls\getopt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ASLib\libxls\ole.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ASLib\libxls\ole.h" />
+		<Unit filename="ASLib\libxls\xls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ASLib\libxls\xls.h" />
+		<Unit filename="ASLib\libxls\xlsstruct.h" />
+		<Unit filename="ASLib\libxls\xlstool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ASLib\libxls\xlstool.h" />
+		<Unit filename="ASLib\libxls\xlstypes.h" />
+		<Unit filename="Ability\Ability.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\Ability.h" />
+		<Unit filename="Ability\Ability_bind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\Ability_private.h" />
+		<Unit filename="Ability\Ability_template.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\Ability_template.h" />
+		<Unit filename="Ability\CB\Ability_ChiHun.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\CB\Ability_ChiHun.h" />
+		<Unit filename="Ability\CB\Ability_FenShen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\CB\Ability_FenShen.h" />
+		<Unit filename="Ability\CB\Ability_JiaoHouShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\CB\Ability_JiaoHouShi.h" />
+		<Unit filename="Ability\CB\Ability_ShiPo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\CB\Ability_ShiPo.h" />
+		<Unit filename="Ability\CB\Ability_WuMing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\CB\Ability_WuMing.h" />
+		<Unit filename="Ability\CB\Ability_YouMingShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\CB\Ability_YouMingShi.h" />
+		<Unit filename="Ability\CB\Ability_ZhuiYingShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\CB\Ability_ZhuiYingShi.h" />
+		<Unit filename="Ability\Common\Ability_JiBenBiFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\Common\Ability_JiBenBiFa.h" />
+		<Unit filename="Ability\Common\Ability_JiBenJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\Common\Ability_JiBenJianFa.h" />
+		<Unit filename="Ability\Common\Ability_JiBenQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\Common\Ability_JiBenQiangFa.h" />
+		<Unit filename="Ability\FB\Ability_HuBenBiFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Ability_HuBenBiFa.h" />
+		<Unit filename="Ability\FB\Ability_JiBenBianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Ability_JiBenBianFa.h" />
+		<Unit filename="Ability\FB\Ability_QinJunQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Ability_QinJunQiangFa.h" />
+		<Unit filename="Ability\FB\Ability_WuLaiGunFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Ability_WuLaiGunFa.h" />
+		<Unit filename="Ability\FB\Ability_XiuWuDuanHun.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Ability_XiuWuDuanHun.h" />
+		<Unit filename="Ability\FB\Ability_ZhenWuWoJianQi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Ability_ZhenWuWoJianQi.h" />
+		<Unit filename="Ability\FB\Ability_ZhongXieJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Ability_ZhongXieJianFa.h" />
+		<Unit filename="Ability\FB\Ability_ZhuiYingQuan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Ability_ZhuiYingQuan.h" />
+		<Unit filename="Ability\FB\Special\Ability_ChangPingJun_WuMing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Special\Ability_ChangPingJun_WuMing.h" />
+		<Unit filename="Ability\FB\Special\Ability_ChangWenJun_LongJuanQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Special\Ability_ChangWenJun_LongJuanQiangFa.h" />
+		<Unit filename="Ability\FB\Special\Ability_HuanQi_KuangNuQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Special\Ability_HuanQi_KuangNuQiangFa.h" />
+		<Unit filename="Ability\FB\Special\Ability_LaoAi_XieWuShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FB\Special\Ability_LaoAi_XieWuShi.h" />
+		<Unit filename="Ability\FQ\Ability_HuiMaQiang.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FQ\Ability_HuiMaQiang.h" />
+		<Unit filename="Ability\FQ\Ability_KangLongQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FQ\Ability_KangLongQiangFa.h" />
+		<Unit filename="Ability\FQ\Ability_KuangNuQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FQ\Ability_KuangNuQiangFa.h" />
+		<Unit filename="Ability\FQ\Ability_LongJuanQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FQ\Ability_LongJuanQiangFa.h" />
+		<Unit filename="Ability\FQ\Ability_NuJiaoQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FQ\Ability_NuJiaoQiangFa.h" />
+		<Unit filename="Ability\FQ\Ability_PoFengQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FQ\Ability_PoFengQiangFa.h" />
+		<Unit filename="Ability\FQ\Ability_YingJiChangKong.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\FQ\Ability_YingJiChangKong.h" />
+		<Unit filename="Ability\JZ\Ability_BuYi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\JZ\Ability_BuYi.h" />
+		<Unit filename="Ability\JZ\Ability_JiXiaJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\JZ\Ability_JiXiaJianFa.h" />
+		<Unit filename="Ability\JZ\Ability_MeiYing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\JZ\Ability_MeiYing.h" />
+		<Unit filename="Ability\JZ\Ability_MoZiJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\JZ\Ability_MoZiJianFa.h" />
+		<Unit filename="Ability\JZ\Ability_SouXin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\JZ\Ability_SouXin.h" />
+		<Unit filename="Ability\JZ\Ability_ZhanXuan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\JZ\Ability_ZhanXuan.h" />
+		<Unit filename="Ability\JZ\Ability_ZhenJiXia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\JZ\Ability_ZhenJiXia.h" />
+		<Unit filename="Ability\JZ\Ability_ZhenMoZi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\JZ\Ability_ZhenMoZi.h" />
+		<Unit filename="Ability\KB\Ability_ChuangXin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_ChuangXin.h" />
+		<Unit filename="Ability\KB\Ability_CuiXinShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_CuiXinShi.h" />
+		<Unit filename="Ability\KB\Ability_DingShenShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_DingShenShi.h" />
+		<Unit filename="Ability\KB\Ability_DuanChang.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_DuanChang.h" />
+		<Unit filename="Ability\KB\Ability_DuanJinShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_DuanJinShi.h" />
+		<Unit filename="Ability\KB\Ability_JieMai.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_JieMai.h" />
+		<Unit filename="Ability\KB\Ability_PoJiaShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_PoJiaShi.h" />
+		<Unit filename="Ability\KB\Ability_XieWuShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_XieWuShi.h" />
+		<Unit filename="Ability\KB\Ability_ZhuiHunShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\KB\Ability_ZhuiHunShi.h" />
+		<Unit filename="Ability\PQ\Ability_CanHongYuJin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\PQ\Ability_CanHongYuJin.h" />
+		<Unit filename="Ability\PQ\Ability_FeiLong.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\PQ\Ability_FeiLong.h" />
+		<Unit filename="Ability\PQ\Ability_KuangFeng.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\PQ\Ability_KuangFeng.h" />
+		<Unit filename="Ability\PQ\Ability_LiPoQianJun.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\PQ\Ability_LiPoQianJun.h" />
+		<Unit filename="Ability\PQ\Ability_LiuHeQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\PQ\Ability_LiuHeQiangFa.h" />
+		<Unit filename="Ability\PQ\Ability_SheXingQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\PQ\Ability_SheXingQiangFa.h" />
+		<Unit filename="Ability\QZ\Ability_HanBingJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\QZ\Ability_HanBingJianFa.h" />
+		<Unit filename="Ability\QZ\Ability_HuoYanJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\QZ\Ability_HuoYanJianFa.h" />
+		<Unit filename="Ability\QZ\Ability_LieYanJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\QZ\Ability_LieYanJianFa.h" />
+		<Unit filename="Ability\QZ\Ability_LiuShuiJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\QZ\Ability_LiuShuiJianFa.h" />
+		<Unit filename="Ability\QZ\Ability_WuWoJianQi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\QZ\Ability_WuWoJianQi.h" />
+		<Unit filename="Ability\QZ\Ability_XuanYinJianQi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Ability\QZ\Ability_XuanYinJianQi.h" />
+		<Unit filename="Attach\AttachAbility.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\AttachAbility.h" />
+		<Unit filename="Attach\AttachAbility_private.h" />
+		<Unit filename="Attach\AttachBuff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\AttachBuff.h" />
+		<Unit filename="Attach\CB\Attach_JueQingZhanYi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\FQ\Attach_HunYuanShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\KB\Attach_CuiDuBiShou.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\PQ\Attach_FuHuShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\PQ\Attach_LieMaShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\QZ\Attach_BingXinJianJue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\QZ\Attach_FenXinJianYi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Attach\QZ\Attach_XinJingTongLing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\Buff.h" />
+		<Unit filename="Buff\BuffList.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\BuffList.h" />
+		<Unit filename="Buff\Buff_define.h" />
+		<Unit filename="Buff\Buff_private.h" />
+		<Unit filename="Buff\CB\Buff_FenShen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\CB\Buff_JiaoHouShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\CB\Buff_ZhuiYingShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FB\Buff_HuanQi_KuangNuQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FB\Buff_JiBenBianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FB\Buff_WuLaiGunFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FB\Buff_XiuWuDuanHun.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FB\Buff_ZhuiYingQuan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FQ\Buff_HuiMaQiang.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FQ\Buff_KangLongQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FQ\Buff_KuangNuQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FQ\Buff_LongJuanQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FQ\Buff_PoFengQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\FQ\Buff_YingJiChangKong.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\JZ\Buff_BuYi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\JZ\Buff_MeiYing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\JZ\Buff_ZhanXuanJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\JZ\Buff_ZhenJiXia.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_ChuangXin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_CuiDuBiShou.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_CuiXinShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_DingShenShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_DuanChang.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_DuanJinShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_JieMai.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_PoJiaShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_XieWuShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\KB\Buff_ZhuiHunShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\PQ\Buff_CanHongYuJin.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\PQ\Buff_FuHuShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\PQ\Buff_LieMaShi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\PQ\Buff_LiuHeQiangFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\QZ\Buff_HanBingJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Buff\QZ\Buff_LieYanJianFa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\Config.h" />
+		<Unit filename="Core\Hero.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\Hero.h" />
+		<Unit filename="Core\HeroAssist.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\HeroAssist.h" />
+		<Unit filename="Core\HeroHelper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\HeroHelper.h" />
+		<Unit filename="Core\HeroInfo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\HeroInfo.h" />
+		<Unit filename="Core\HeroState.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\HeroState.h" />
+		<Unit filename="Core\HeroWinPer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\HeroWinPer.h" />
+		<Unit filename="Core\Mem.h" />
+		<Unit filename="Core\Output.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\Output.h" />
+		<Unit filename="Core\miniCRT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Core\miniCRT.h" />
+		<Unit filename="Core\version.h" />
+		<Unit filename="Res\HeroHelper.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="Res\resource.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

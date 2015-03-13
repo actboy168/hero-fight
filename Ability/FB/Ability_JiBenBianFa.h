@@ -1,0 +1,6 @@
+﻿#ifndef INCLUDE_ABILITY_JIBENBIANFA
+#define INCLUDE_ABILITY_JIBENBIANFA
+
+void JiBenBianFa_bind();
+
+#endif
